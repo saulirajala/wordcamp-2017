@@ -40,8 +40,8 @@ before_capture: 'javascript/wait--phantom.js'
 # (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
 # Height will be 1500px, if not defined here otherwise
 screen_widths:
-  - 320x3000
-  - 768x3000
+  #- 320x3000
+  #- 768x3000
   - 1280x3000
 
 # (optional) Resize to each screen width (efficient), or reload at each screen width (costly)
@@ -68,7 +68,7 @@ threshold: 0
 #   diffs_first - all paths (with or without a difference) are shown, sorted by difference size (largest first)
 #   diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
 # Note: different screen widths are always grouped together.
-mode: diffs_only
+mode: diffs_first
 
 # (optional) Choose to run Wraith in verbose mode, for easier debugging
 verbose: true
